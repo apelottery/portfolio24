@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    
+    box-sizing: border-box;
+
+}
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button{
+    
+    display: block;
+    margin: 0 auto;
+    
+  
+    
+    
+}
+.btncontainer{
+    margin-top: 350px;
+}
+.pic{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20em;
+    width: 300px;
+    height: 320px;
+}
+
+
+.btn1 {
+    background-color: rgb(139, 205, 246);
+    border-radius: 1em;
+    font-size: 24px;
+    padding: 15px,35px;
+    width: 35%;
+    height: 52px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 45px;
+    animation: pulsate-btn 2s ease-in-out infinite;
+  }
+  
+  .btn2 {
+    background-color: rgb(220, 198, 245);
+    border-radius: 1em;
+    font-size: 24px;
+    padding: 15px,35px;
+    width: 35%;
+    height: 52px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 45px;
+    animation: pulsate-btn 2s ease-in-out infinite;
+  }
+  
+  .btn3 {
+    background-color: rgb(205, 243, 220);
+    border-radius: 1em;
+    font-size: 24px;
+    padding: 15px,35px;
+    width: 35%;
+    height: 52px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 45px;
+    animation: pulsate-btn 2s ease-in-out infinite;
+  }
+  
+  .btn4 {
+    background-color: rgb(240, 177, 201);
+    border-radius: 1em;
+    font-size: 24px;
+    padding: 15px,35px;
+    width: 35%;
+    height: 52px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 45px;
+    animation: pulsate-btn 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulsate-btn {
+    0% {
+      box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7),
+                  0 0 40px 10px rgba(0, 0, 255, 0.7),
+                  0 0 60px 15px rgba(255, 0, 255, 0.7),
+                  0 0 80px 20px rgba(255, 255, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 30px 7px rgba(0, 255, 255, 0.7),
+                  0 0 50px 12px rgba(0, 0, 255, 0.7),
+                  0 0 70px 17px rgba(255, 0, 255, 0.7),
+                  0 0 90px 22px rgba(255, 255, 0, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7),
+                  0 0 40px 10px rgba(0, 0, 255, 0.7),
+                  0 0 60px 15px rgba(255, 0, 255, 0.7),
+                  0 0 80px 20px rgba(255, 255, 0, 0.7);
+    }
+  }
+.btn1:hover{
+    background-color: rgba(90, 175, 240, 0.414);
+}
+.btn2:hover{
+    background-color: rgba(204, 118, 244, 0.346);
+}
+.btn3:hover{
+    background-color: rgba(84, 241, 191, 0.317);
+}
+.btn4:hover{
+    background-color: rgba(243, 87, 243, 0.32);
+}
+.btn1:active{
+    background-color: rgb(82, 138, 244);
+    box-shadow:  0 5px #666;
+    transform: translateY(4px)
+}
+.btn2:active{
+    background-color: rgba(212, 68, 245, 0.966);
+    box-shadow:  0 5px #666;
+    transform: translateY(4px)
+}
+.btn3:active{
+    background-color: rgb(84, 241, 192);
+    box-shadow:  0 5px #666;
+    transform: translateY(4px)
+}
+.btn4:active{
+    background-color: rgb(236, 130, 236);
+    box-shadow:  0 5px #666;
+    transform: translateY(4px)
+}
+.pic{
+    border-radius: 20em;
+}
+.comment-bubble {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  .pic {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20em;
+    width: 300px;
+    height: 320px;
+    animation: pulsate 3.0s ease-in-out infinite;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 51, 0.7),
+                0 0 40px 10px rgba(0, 255, 128, 0.7),
+                0 0 60px 15px rgba(0, 128, 255, 0.7),
+                0 0 80px 20px rgba(128, 0, 255, 0.7);
+  }
+  
+  @keyframes pulsate {
+    0% {
+      box-shadow: 0 0 20px 5px rgba(0, 255, 51, 0.7),
+                  0 0 40px 10px rgba(0, 255, 128, 0.7),
+                  0 0 60px 15px rgba(0, 128, 255, 0.7),
+                  0 0 80px 20px rgba(128, 0, 255, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 40px 10px rgba(0, 255, 51, 0.9),
+                  0 0 70px 17px rgba(0, 255, 128, 0.9),
+                  0 0 100px 25px rgba(0, 128, 255, 0.9),
+                  0 0 120px 30px rgba(128, 0, 255, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 20px 5px rgba(0, 255, 51, 0.7),
+                  0 0 40px 10px rgba(0, 255, 128, 0.7),
+                  0 0 60px 15px rgba(0, 128, 255, 0.7),
+                  0 0 80px 20px rgba(128, 0, 255, 0.7);
+    }
+  }
+  
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: rgba(216, 123, 244, 0.187);
+    font-weight: 300;
+    margin-top: 5px;
+}
+.social-icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .social-icons a:hover {
+    color: #d87cfa;
+  }
+  
+  .fa-square-facebook {
+    color: #fcfc35;
+  }
+  
+  .fa-linkedin {
+    color: #6dd539;
+  }
+  
+  .fa-square-twitter {
+    color: #0bc7f6;
+  }
+  .fa-github{
+    color: #f59921;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    .btn1, .btn2, .btn3, .btn4 {
+      font-size: 14px;
+    }
+  }
+  .phone {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: rgb(123, 250, 109);
+   
+    
+    
+  }
+
